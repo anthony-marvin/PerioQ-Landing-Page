@@ -2029,14 +2029,16 @@ textarea.w-select {
   display: none !important;
 }
 
-.body {
-  font-family: Montserrat, sans-serif;
-  color: #fff;
-  font-size: 16px;
+h3 {
+  font-size: 1.5em;
+  line-height: 1.125;
 }
-
 p {
   margin-bottom: 1em;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  font-size: 1em;
+  line-height: 1.5;
 }
 
 blockquote {
@@ -2046,7 +2048,7 @@ blockquote {
   border-width: 1px;
   border-left-color: #e2e2e2;
   font-size: 0.75em;
-  line-height: 22px;
+  line-height: 1.5;
 }
 
 .hero {
@@ -2057,9 +2059,10 @@ blockquote {
 }
 
 .tagline {
+  font-family: Montserrat, sans-serif;
   color: #fff;
-  font-size: 2em;
-  line-height: 1.125em;
+  font-size: 1.75em;
+  line-height: 1.125;
 }
 
 .tagline--qa {
@@ -2072,11 +2075,16 @@ blockquote {
 }
 
 .tagline--margin-bottom {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 .tagline--color {
   color: #00116c;
+  text-align: center;
+}
+
+.tagline--qa {
+  line-height: 1.125em;
 }
 
 .background-video {
@@ -2119,24 +2127,15 @@ blockquote {
   background-image: none;
 }
 
-.paragraph {
-  color: #fff;
-}
-
 .hero__video {
   position: relative;
 }
 
-.button {
-  position: absolute;
-  left: auto;
-  top: auto;
-  right: 35px;
-  bottom: 35px;
-  z-index: 2;
+.body {
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+  font-size: 16px;
 }
-
-
 
 .column {
   line-height: 1.5em;
@@ -2197,15 +2196,6 @@ blockquote {
   text-transform: none;
 }
 
-.text--smaller {
-  margin-bottom: 10px;
-  color: #000;
-  font-size: 0.5em;
-  line-height: 1.5;
-  font-style: italic;
-  text-align: center;
-}
-
 .image {
   display: block;
   margin-right: auto;
@@ -2218,8 +2208,7 @@ blockquote {
 }
 
 .form-column {
-  margin-top: -130px;
-  padding: 0 25px;
+  margin-top: -100px;
   padding-bottom: 200px;
   background-image: -webkit-linear-gradient(270deg, #fff, #fff);
   background-image: linear-gradient(180deg, #fff, #fff);
@@ -2234,6 +2223,27 @@ blockquote {
 .footer-text {
   color: #000;
 }
+
+.paragraph--border-bottom {
+  border-bottom: 5px solid #97102a;
+}
+
+.paragraph--padding {
+  padding-right: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+}
+
+.container--margin-bottom {
+  margin-bottom: 1em;
+}
+
+.paragraph {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+
 
 @media (max-width: 991px) {
   .body {
@@ -2257,20 +2267,16 @@ blockquote {
 }
 
 @media (max-width: 479px) {
+  .hero {
+    display: none;
+  }
   p {
     margin-top: 1em;
   }
-  .paragraph {
-    margin-top: 10px;
-  }
   .cutout-image {
-    margin-top: 0px;
     display: none;
   }
   .form-column {
     margin-top: 0px;
-  }
-  .hero__video {
-    display: none;
   }
 }
